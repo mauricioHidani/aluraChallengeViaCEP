@@ -132,7 +132,6 @@ public class AddService implements IAddService {
 	private String getCep() {
 		System.out.println("Realize a consulta do endereço usando o CEP");
 		System.out.print("CEP: ");
-		ScannerUtil.clear(scanner);
 		final var cep = scanner.nextLine();
 		final var newCep = cep.replaceAll("[^0-9]", "");
 		if (newCep.length() < 8) {
